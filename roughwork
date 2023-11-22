@@ -5,4 +5,7 @@ UPDATE Table_Name SET Column_Name = New_Value WHERE Condition;
 UPDATE Activity SET Remark = 'Add ticket in PMS' WHERE Task = 'Audit';
 SELECT * FROM Activity;
  Audit	21-Nov-23	21-Nov-23	Completed	Office	Add ticket in PMS
+CREATE TABLE OFFICE_TASK (Task varchar(20), StartDate varchar(20), EndDate varchar(20), Status varchar(20), Remark varchar(20));
+ALTER TABLE Activity RENAME Start_Date TO StartDate;
+ALTER TABLE OFFICE_TASK RENAME TO OfficeTask;
 
