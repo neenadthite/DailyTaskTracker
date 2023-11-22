@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS Purchase (Item varchar(20), Date varchar(20), Status varchar(20));
-INSET INTO Activity(Task, Start_Date, End_Date, Status) VALUES(Audit, 21-Nov-23, 21-Nov-23, Office);
+INSET INTO Activity(Task, Start_Date, End_Date, Status) VALUES('Audit', '21-Nov-23', '21-Nov-23', 'Office');
 ALTER TABLE Activity ADD COLUMN Remark varchar(20);
 UPDATE Table_Name SET Column_Name = New_Value WHERE Condition; 
 UPDATE Activity SET Remark = 'Add ticket in PMS' WHERE Task = 'Audit';
