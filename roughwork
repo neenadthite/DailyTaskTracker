@@ -8,4 +8,6 @@ SELECT * FROM Activity;
 CREATE TABLE OFFICE_TASK (Task varchar(20), StartDate varchar(20), EndDate varchar(20), Status varchar(20), Remark varchar(20));
 ALTER TABLE Activity RENAME Start_Date TO StartDate;
 ALTER TABLE OFFICE_TASK RENAME TO OfficeTask;
+UPDATE Expense SET Status = 'Recharged' WHERE Item = 'TATA PLAY Recharge';
+DELETE FROM Activity WHERE Task = 'Audit';
 
